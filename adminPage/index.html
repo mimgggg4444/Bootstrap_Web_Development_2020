@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>admin page</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <a class="navbar-brand" href="./index.html">관리자 페이지</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbar" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarMenu">
+            <div class="navbar-nav">
+
+              <a href="./index.html" class="active nav-item nav-link">대시보드</a>
+              <a href="./event.html" class="nav-item nav-link">이벤트</a>
+              <a href="./blog.html" class="nav-item nav-link">블로그</a>
+              <a href="./user.html" class="nav-item nav-link">회원</a>
+            </div>
+            <div class="navbar-nav mr-2">
+              <a href="./userLogin.html" class="nav-item nav-link">로그인</a>
+              <a href="./userLogout.html" class="nav-item nav-link">로그아웃</a>
+              <a href="./userEdit.html" class="nav-item nav-link">관리자 정보 수정</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- header -->
+    <div id="header">
+      <div class="container p-3 bg-dark text-white">
+        <div class="row">
+          <div class="col-9 info">
+            <h4><img class="mr-3" src="./img/settings.svg" alt="">대시보드 <small>페이지를 관리하세요.</small></h4>
+          </div>
+          <div class="col-3">
+            <!-- dropdown -->
+            <div class="dropdown btn-group float-right">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">관리 목록 ▼</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item active" href="./index.html">대시보드</a>
+                <a class="dropdown-item" href="./event.html">이벤트 관리</a>
+                <a class="dropdown-item" href="./blog.html">블로그 관리</a>
+                <a class="dropdown-item" href="./user.html">회원 관리</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <!-- script -->
+  <script src="./js/jquery-3.5.1.slim.min.js"></script>    
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
